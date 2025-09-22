@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spellbound Tactics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+    <section class="ui">
+      <h1>Spellbound Tactics</h1>
+      <p class="tagline">Spell words on the battlefield to unleash damage!</p>
+      <div class="status">
+        <div>Hero HP: <span id="heroHp">0</span></div>
+        <div>Enemy HP: <span id="enemyHp">0</span></div>
+      </div>
+      <div class="word-panel">
+        <div class="word-display" id="wordDisplay">Select adjacent tiles to form a word.</div>
+        <div class="controls">
+          <button id="castButton">Cast Word</button>
+          <button id="clearButton">Clear</button>
+        </div>
+      </div>
+      <div class="log" id="log"></div>
+      <footer>Click tiles in order. Words must use connected tiles and contain at least two letters.</footer>
+    </section>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
